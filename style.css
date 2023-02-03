@@ -26,10 +26,10 @@ svg{
 :root{
   /* Light Theme Variables */
   --color-text-light: #333332;
-  --color-background-light: #FAF4E5;
-  --color-pink-light: #e5a1aa;
-  --color-green-light: #7AD0AC;
-  --color-blue-light: #8395CD;
+  --color-background-light: #ffffff;
+  --color-pink-light: #586a6a;
+  --color-green-light: #7ad0cd;
+  --color-blue-light: #485b91;
 
   /* Dark Theme Variables */
   --color-text-dark: #FAF4E5;
