@@ -23,9 +23,9 @@ function sendMail() {
 
   
   function linkedinGo() {
-    
+    window.open('', '_open');
   }
 
   function instaGo() {
-
+    window.open('', '_open');
   }
