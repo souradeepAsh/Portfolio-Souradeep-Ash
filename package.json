@@ -2,10 +2,11 @@
   "name": "boko-tutorial",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://souradeepash.github.io/Portfolio-Souradeep-Ash/",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "preview": "vite preview",
+    "start": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
