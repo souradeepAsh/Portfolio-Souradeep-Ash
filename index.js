@@ -23,9 +23,9 @@ function sendMail() {
 
   
   function linkedinGo() {
-    window.open('', '_open');
+    window.open('https://www.linkedin.com/in/souradeep-ash/', '_open');
   }
 
   function instaGo() {
-    window.open('', '_open');
+    window.open('https://www.instagram.com/kingashofficial/', '_open');
   }
