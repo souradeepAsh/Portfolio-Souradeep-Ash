@@ -1,85 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- vanta.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
 
-    <script src="index.js"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- vanta.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
 
-    <script type="text/javascript">
-    (function(){
+  <script src="index.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+
+  <script type="text/javascript">
+    (function () {
       emailjs.init("Rqwp1bkocPKIe8i6i");
     })();
-    </script>
+  </script>
 
-    <title>Souradeep Ash</title>
-  </head>
-  <body class="light-theme">
-    <div class="experience">
-      <canvas class="experience-canvas"></canvas>
+  <title>Souradeep Ash</title>
+</head>
+
+<body class="light-theme">
+  <div class="experience">
+    <canvas class="experience-canvas"></canvas>
+  </div>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-wrapper">
+      <div class="typewriter">
+        <div class="slide"><i></i></div>
+        <div class="paper"></div>
+        <div class="keyboard"></div>
+      </div>
     </div>
+  </div>
 
-    <!-- Preloader -->
-    <div class="preloader">
-      <div class="preloader-wrapper">
-        <div class="typewriter">
-          <div class="slide"><i></i></div>
-          <div class="paper"></div>
-          <div class="keyboard"></div>
-        </div>
+  <div class="page" asscroll-container>
+
+    <div class="toggle-bar">
+      <div class="sun-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+          <path fill="currentColor"
+            d="M12 5Q11.575 5 11.288 4.712Q11 4.425 11 4V2Q11 1.575 11.288 1.287Q11.575 1 12 1Q12.425 1 12.713 1.287Q13 1.575 13 2V4Q13 4.425 12.713 4.712Q12.425 5 12 5ZM16.95 7.05Q16.675 6.775 16.675 6.362Q16.675 5.95 16.95 5.65L18.35 4.225Q18.65 3.925 19.062 3.925Q19.475 3.925 19.775 4.225Q20.05 4.5 20.05 4.925Q20.05 5.35 19.775 5.625L18.35 7.05Q18.075 7.325 17.65 7.325Q17.225 7.325 16.95 7.05ZM20 13Q19.575 13 19.288 12.712Q19 12.425 19 12Q19 11.575 19.288 11.287Q19.575 11 20 11H22Q22.425 11 22.712 11.287Q23 11.575 23 12Q23 12.425 22.712 12.712Q22.425 13 22 13ZM12 23Q11.575 23 11.288 22.712Q11 22.425 11 22V20Q11 19.575 11.288 19.288Q11.575 19 12 19Q12.425 19 12.713 19.288Q13 19.575 13 20V22Q13 22.425 12.713 22.712Q12.425 23 12 23ZM5.65 7.05 4.225 5.65Q3.925 5.35 3.925 4.925Q3.925 4.5 4.225 4.225Q4.5 3.95 4.925 3.95Q5.35 3.95 5.625 4.225L7.05 5.65Q7.325 5.925 7.325 6.35Q7.325 6.775 7.05 7.05Q6.75 7.325 6.35 7.325Q5.95 7.325 5.65 7.05ZM18.35 19.775 16.95 18.35Q16.675 18.05 16.675 17.638Q16.675 17.225 16.95 16.95Q17.225 16.675 17.638 16.675Q18.05 16.675 18.35 16.95L19.775 18.35Q20.075 18.625 20.062 19.05Q20.05 19.475 19.775 19.775Q19.475 20.075 19.05 20.075Q18.625 20.075 18.35 19.775ZM2 13Q1.575 13 1.288 12.712Q1 12.425 1 12Q1 11.575 1.288 11.287Q1.575 11 2 11H4Q4.425 11 4.713 11.287Q5 11.575 5 12Q5 12.425 4.713 12.712Q4.425 13 4 13ZM4.225 19.775Q3.95 19.5 3.95 19.075Q3.95 18.65 4.225 18.375L5.65 16.95Q5.925 16.675 6.338 16.675Q6.75 16.675 7.05 16.95Q7.35 17.25 7.35 17.663Q7.35 18.075 7.05 18.375L5.65 19.775Q5.35 20.075 4.925 20.075Q4.5 20.075 4.225 19.775ZM12 18Q9.5 18 7.75 16.25Q6 14.5 6 12Q6 9.5 7.75 7.75Q9.5 6 12 6Q14.5 6 16.25 7.75Q18 9.5 18 12Q18 14.5 16.25 16.25Q14.5 18 12 18ZM12 16Q13.65 16 14.825 14.825Q16 13.65 16 12Q16 10.35 14.825 9.175Q13.65 8 12 8Q10.35 8 9.175 9.175Q8 10.35 8 12Q8 13.65 9.175 14.825Q10.35 16 12 16Z" />
+        </svg>
+      </div>
+
+      <button class="toggle-button">
+        <div class="toggle-circle"></div>
+      </button>
+
+      <div class="moon-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+          <path fill="currentColor"
+            d="M12 21Q8.25 21 5.625 18.375Q3 15.75 3 12Q3 8.25 5.625 5.625Q8.25 3 12 3Q12.35 3 12.688 3.025Q13.025 3.05 13.35 3.1Q12.325 3.825 11.713 4.987Q11.1 6.15 11.1 7.5Q11.1 9.75 12.675 11.325Q14.25 12.9 16.5 12.9Q17.875 12.9 19.025 12.287Q20.175 11.675 20.9 10.65Q20.95 10.975 20.975 11.312Q21 11.65 21 12Q21 15.75 18.375 18.375Q15.75 21 12 21ZM12 19Q14.2 19 15.95 17.788Q17.7 16.575 18.5 14.625Q18 14.75 17.5 14.825Q17 14.9 16.5 14.9Q13.425 14.9 11.262 12.738Q9.1 10.575 9.1 7.5Q9.1 7 9.175 6.5Q9.25 6 9.375 5.5Q7.425 6.3 6.213 8.05Q5 9.8 5 12Q5 14.9 7.05 16.95Q9.1 19 12 19ZM11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Z" />
+        </svg>
       </div>
     </div>
 
-    <div class="page" asscroll-container>
+    <div class="page-wrapper" asscroll>
+      <section class="hero">
+        <div class="hero-wrapper">
 
-      <div class="toggle-bar">
-        <div class="sun-wrapper">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path fill="currentColor" d="M12 5Q11.575 5 11.288 4.712Q11 4.425 11 4V2Q11 1.575 11.288 1.287Q11.575 1 12 1Q12.425 1 12.713 1.287Q13 1.575 13 2V4Q13 4.425 12.713 4.712Q12.425 5 12 5ZM16.95 7.05Q16.675 6.775 16.675 6.362Q16.675 5.95 16.95 5.65L18.35 4.225Q18.65 3.925 19.062 3.925Q19.475 3.925 19.775 4.225Q20.05 4.5 20.05 4.925Q20.05 5.35 19.775 5.625L18.35 7.05Q18.075 7.325 17.65 7.325Q17.225 7.325 16.95 7.05ZM20 13Q19.575 13 19.288 12.712Q19 12.425 19 12Q19 11.575 19.288 11.287Q19.575 11 20 11H22Q22.425 11 22.712 11.287Q23 11.575 23 12Q23 12.425 22.712 12.712Q22.425 13 22 13ZM12 23Q11.575 23 11.288 22.712Q11 22.425 11 22V20Q11 19.575 11.288 19.288Q11.575 19 12 19Q12.425 19 12.713 19.288Q13 19.575 13 20V22Q13 22.425 12.713 22.712Q12.425 23 12 23ZM5.65 7.05 4.225 5.65Q3.925 5.35 3.925 4.925Q3.925 4.5 4.225 4.225Q4.5 3.95 4.925 3.95Q5.35 3.95 5.625 4.225L7.05 5.65Q7.325 5.925 7.325 6.35Q7.325 6.775 7.05 7.05Q6.75 7.325 6.35 7.325Q5.95 7.325 5.65 7.05ZM18.35 19.775 16.95 18.35Q16.675 18.05 16.675 17.638Q16.675 17.225 16.95 16.95Q17.225 16.675 17.638 16.675Q18.05 16.675 18.35 16.95L19.775 18.35Q20.075 18.625 20.062 19.05Q20.05 19.475 19.775 19.775Q19.475 20.075 19.05 20.075Q18.625 20.075 18.35 19.775ZM2 13Q1.575 13 1.288 12.712Q1 12.425 1 12Q1 11.575 1.288 11.287Q1.575 11 2 11H4Q4.425 11 4.713 11.287Q5 11.575 5 12Q5 12.425 4.713 12.712Q4.425 13 4 13ZM4.225 19.775Q3.95 19.5 3.95 19.075Q3.95 18.65 4.225 18.375L5.65 16.95Q5.925 16.675 6.338 16.675Q6.75 16.675 7.05 16.95Q7.35 17.25 7.35 17.663Q7.35 18.075 7.05 18.375L5.65 19.775Q5.35 20.075 4.925 20.075Q4.5 20.075 4.225 19.775ZM12 18Q9.5 18 7.75 16.25Q6 14.5 6 12Q6 9.5 7.75 7.75Q9.5 6 12 6Q14.5 6 16.25 7.75Q18 9.5 18 12Q18 14.5 16.25 16.25Q14.5 18 12 18ZM12 16Q13.65 16 14.825 14.825Q16 13.65 16 12Q16 10.35 14.825 9.175Q13.65 8 12 8Q10.35 8 9.175 9.175Q8 10.35 8 12Q8 13.65 9.175 14.825Q10.35 16 12 16Z"/></svg>
-        </div>
-        
-        <button class="toggle-button">
-          <div class="toggle-circle"></div>
-        </button>
-        
-        <div class="moon-wrapper">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path fill="currentColor" d="M12 21Q8.25 21 5.625 18.375Q3 15.75 3 12Q3 8.25 5.625 5.625Q8.25 3 12 3Q12.35 3 12.688 3.025Q13.025 3.05 13.35 3.1Q12.325 3.825 11.713 4.987Q11.1 6.15 11.1 7.5Q11.1 9.75 12.675 11.325Q14.25 12.9 16.5 12.9Q17.875 12.9 19.025 12.287Q20.175 11.675 20.9 10.65Q20.95 10.975 20.975 11.312Q21 11.65 21 12Q21 15.75 18.375 18.375Q15.75 21 12 21ZM12 19Q14.2 19 15.95 17.788Q17.7 16.575 18.5 14.625Q18 14.75 17.5 14.825Q17 14.9 16.5 14.9Q13.425 14.9 11.262 12.738Q9.1 10.575 9.1 7.5Q9.1 7 9.175 6.5Q9.25 6 9.375 5.5Q7.425 6.3 6.213 8.05Q5 9.8 5 12Q5 14.9 7.05 16.95Q9.1 19 12 19ZM11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Q11.75 12.25 11.75 12.25Z"/></svg>
-        </div>
-      </div>
-      
-      <div class="page-wrapper" asscroll>
-        <section class="hero">
-          <div class="hero-wrapper">
-
-            <!-- Intro Stuff -->
-            <div class="intro-text"><h1>Welcome to my portfolio!</h1></div>
-            <div class="arrow-svg-wrapper">
-              <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path fill="currentColor" d="M12 14.95q-.2 0-.375-.063-.175-.062-.325-.212L6.675 10.05q-.275-.275-.262-.688.012-.412.287-.687.275-.275.7-.275.425 0 .7.275l3.9 3.9 3.925-3.925q.275-.275.688-.263.412.013.687.288.275.275.275.7 0 .425-.275.7l-4.6 4.6q-.15.15-.325.212-.175.063-.375.063Z"/></svg>
-            </div>
-
-            <div class="hero-main">
-              <h1 class="hero-main-title">Souradeep Ash</h1>
-              <p class="hero-main-description">AR | VR developer</p>
-            </div>
-
-            <div class="hero-second">
-              <p class="hero-second-subheading first-sub">SouradeepAsh</p>
-              <p class="hero-second-subheading second-sub">Portfolio</p>
-            </div>
-
+          <!-- Intro Stuff -->
+          <div class="intro-text">
+            <h1>Welcome to my portfolio!</h1>
           </div>
-        </section>
+          <div class="arrow-svg-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+              <path fill="currentColor"
+                d="M12 14.95q-.2 0-.375-.063-.175-.062-.325-.212L6.675 10.05q-.275-.275-.262-.688.012-.412.287-.687.275-.275.7-.275.425 0 .7.275l3.9 3.9 3.925-3.925q.275-.275.688-.263.412.013.687.288.275.275.275.7 0 .425-.275.7l-4.6 4.6q-.15.15-.325.212-.175.063-.375.063Z" />
+            </svg>
+          </div>
 
-        <div class="first-move section-margin"></div>
+          <div class="hero-main">
+            <h1 class="hero-main-title">Souradeep Ash</h1>
+            <p class="hero-main-description">AR | VR developer</p>
+          </div>
 
-        <section class="first-section section left">
-          <!-- <script type="text/javascript">
+          <div class="hero-second">
+            <p class="hero-second-subheading first-sub">SouradeepAsh</p>
+            <p class="hero-second-subheading second-sub">Portfolio</p>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="first-move section-margin"></div>
+
+      <section class="first-section section left">
+        <!-- <script type="text/javascript">
             VANTA.BIRDS({
               el: "#vanta-canvas",
               mouseController : true,
@@ -92,212 +104,282 @@
             })
           </script> -->
 
-          <div class="progress-wrapper progress-bar-wrapper-left">
-            <div class="progress-bar"></div>
-          </div>
+        <div class="progress-wrapper progress-bar-wrapper-left">
+          <div class="progress-bar"></div>
+        </div>
 
-          <div class="section-intro-wrapper">
-            <h1 class="section-title">
-              <span class="section-title-text">About Me</span>
-              <div class="section-title-decoration styleOne"></div>
-              <div class="section-title-decoration styleTwo"></div>
-              <div class="section-title-decoration styleThree"></div>
-            </h1>
-            <span class="section-number">01</span>
-          </div>
-          
-
-          <div class="section-detail-wrapper">
-            <p class="section-text">Hi there 👋! I'm a Btech cse student from India, Currently working on AR & VR.</p>
-            <p class="section-text"> I have always been fascinated by the potential of these AR / VR technologies to transform the way we interact with digital content, and I love being able to create experiences that feel truly immersive. I'm experienced with a range of software development tools, such as Unity and Unreal Engine.</p>
-          </div>
-          
-        </section>
-
-        <div class="second-move section-margin"></div>
-
-        <section class="second-section section right">
-          <div class="progress-wrapper progress-bar-wrapper-right">
-            <div class="progress-bar blue-background"></div>
-          </div>
-          <div class="section-intro-wrapper blue-text blue-border">
-            <h1 class="section-title blue-text blue-border">
-              <span class="section-title-text blue-text">My Work</span>
-              <div class="section-title-decoration styleOne blue-border"></div>
-              <div class="section-title-decoration styleTwo blue-border"></div>
-              <div class="section-title-decoration styleThree blue-background blue-border"></div>
-            </h1>
-            <span class="section-number blue-text">02</span>
-          </div>
-
-          <div class="section-detail-wrapper">
-            <h3 class="section-heading">Virtual Reality Application</h3>
-            <p class="section-text">
-              The Project is Under process. 
-
-              <button class="btn_2_2" onclick="">
-                <!-- <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill="currentColor"></path></svg> -->
-                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M1 14.5a6.496 6.496 0 0 1 3.064-5.519 8.001 8.001 0 0 1 15.872 0 6.5 6.5 0 0 1-2.936 12L7 21c-3.356-.274-6-3.078-6-6.5zm15.848 4.487a4.5 4.5 0 0 0 2.03-8.309l-.807-.503-.12-.942a6.001 6.001 0 0 0-11.903 0l-.12.942-.805.503a4.5 4.5 0 0 0 2.029 8.309l.173.013h9.35l.173-.013zM13 12h3l-4 5-4-5h3V8h2v4z" fill="currentColor"></path></svg>
-                <span>Download</span>
-              </button>
-            </p>
-
-            <h3 class="section-heading">Augmented Reality SHopping application(Web based and Application Based)</h3>
-            <p class="section-text">
-              Currently working on it.
-            </p>
-
-            <h3 class="section-heading">Augmented Reality with IOT device.</h3>
-            <p class="section-text">
-              It is a Augmented reality with IOT application mainly focused on Android. Control by a web based application. When a 3D model will move and do its job with this our animation will trigger and do it in the application to demonstrate how the machine will work in 3D. 
-              Manly focus for the Students as they can use it in Online class or any remote places with interacting with the machine they can use it using the inbuilt button and also when machine will work in physically its also working with it.
-            </p>
-
-            <h3 class="section-heading">Sorting Visualizer</h3>
-            <p class="section-text">
-              A sorting Visualizer with 12 Different animation(Visualizer).
-              25 Different types of Sorting algorithm. 
-
-              <!-- <button class="btn_1" onclick="">Lets Go</button> -->
-              <button class="btn_2" onclick="">
-                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill="currentColor"></path></svg>
-                <span>Launch</span>
-              </button>
-            </p>
-          </div>
-          <div class="progress-wrapper progress-bar-wrapper-right">
-            <div class="progress-bar blue-background"></div>
-          </div>
-        </section>
+        <div class="section-intro-wrapper">
+          <h1 class="section-title">
+            <span class="section-title-text">About Me</span>
+            <div class="section-title-decoration styleOne"></div>
+            <div class="section-title-decoration styleTwo"></div>
+            <div class="section-title-decoration styleThree"></div>
+          </h1>
+          <span class="section-number">01</span>
+        </div>
 
 
-        <section class="second-section section left">
-          <div class="section-intro-wrapper blue-text blue-border">
-            <h1 class="section-title blue-text blue-border">
-              <span class="section-title-text blue-text">Work Experience</span>
-              <div class="section-title-decoration styleOne blue-border"></div>
-              <div class="section-title-decoration styleTwo blue-border"></div>
-              <div class="section-title-decoration styleThree blue-background blue-border"></div>
-            </h1>
-            <span class="section-number blue-text">03</span>
-          </div>
-          <div class="section-detail-wrapper">
-            <h3 class="section-heading">Free Lancing | LinkedIn, Fiver, Freelancer | April/2022 - December/2022 </h3>
-              <p>
-                Working as a freelancer in multiple domains initially after sometime switched to full time as an AR and VR developer.
-              <p class="section-text">
-                Achievements/Tasks :
-              </p>
-              Worked around 2 - 3 freelancing project
-              like AR- Book for children, Story telling
-            </p>
-          </div>
-          <div class="section-detail-wrapper">
-            <h3 class="section-heading">Researcher & Developer Intern | HiDs Technologies | July/2022-May/2023</h3>
-              <p>
-                IT Services and IT Consulting.
-                <p class="section-text">
-                  Achievements/Tasks :
-                </p>
-                <ul>
-                <li>Worked on Virtual button and Digital twin provided by Vuforia SDK to create some exiting application for the client.</li>
-                <li>Worked on some small games in VR for students.</li>
-                <li>Research on Augmented Reality with IOT with AWS for Future project.</li>
-                <li>Worked on multiple Augmented reality application for clients.</li>
-                <li>Industry servers while my internship - Education, Automation.</li>
-              </ul>
-              </p>
-          </div>
-        </section>
+        <div class="section-detail-wrapper">
+          <p class="section-text">Hi there 👋! I'm a Btech cse student from India, Currently working on AR & VR.</p>
+          <p class="section-text"> I have always been fascinated by the potential of these AR / VR technologies to
+            transform the way we interact with digital content, and I love being able to create experiences that feel
+            truly immersive. I'm experienced with a range of software development tools, such as Unity and Unreal
+            Engine.</p>
+        </div>
 
-        <section class="second-section section right">
-          <div class="section-intro-wrapper blue-text blue-border">
-            <h1 class="section-title blue-text blue-border">
-              <span class="section-title-text blue-text">Interest</span>
-              <div class="section-title-decoration styleOne blue-border"></div>
-              <div class="section-title-decoration styleTwo blue-border"></div>
-              <div class="section-title-decoration styleThree blue-background blue-border"></div>
-            </h1>
-            <span class="section-number blue-text">04</span>
-          </div>
-        </section>
+      </section>
 
-        <div class="third-move section-margin"></div>
+      <div class="second-move section-margin"></div>
 
-        <section class="third-section section left">
-          <div class="progress-wrapper progress-bar-wrapper-left">
-            <div class="progress-bar green-background"></div>
-          </div>
+      <section class="second-section section right">
+        <div class="progress-wrapper progress-bar-wrapper-right">
+          <div class="progress-bar blue-background"></div>
+        </div>
+        <div class="section-intro-wrapper blue-text blue-border">
+          <h1 class="section-title blue-text blue-border">
+            <span class="section-title-text blue-text">My Work</span>
+            <div class="section-title-decoration styleOne blue-border"></div>
+            <div class="section-title-decoration styleTwo blue-border"></div>
+            <div class="section-title-decoration styleThree blue-background blue-border"></div>
+          </h1>
+          <span class="section-number blue-text">02</span>
+        </div>
 
-          <div class="section-intro-wrapper green-text green-border">
-            <h1 class="section-title green-text green-border">
-              <span class="section-title-text green-text">Contact Me</span>
-              <div class="section-title-decoration styleOne green-border"></div>
-              <div class="section-title-decoration styleTwo green-border"></div>
-              <div class="section-title-decoration styleThree green-background green-border"></div>
-            </h1>
-            <span class="section-number green-text">05</span>
-          </div>
+        <div class="section-detail-wrapper">
+          <h3 class="section-heading">Virtual Reality Application</h3>
+          <p class="section-text">
+            The Project is Under process.
 
-          <div class="section-detail-wrapper">
-            <h3 class="section-heading">LinkedIn</h3>
-            <button class="btn_btn-primary" onclick="linkedinGo()">
-              <span class="shadow"></span>
-              <span class="edge"></span>
-              <span class="front text">Lets Go</span>
+            <button class="btn_2_2" onclick="">
+              <!-- <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill="currentColor"></path></svg> -->
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M1 14.5a6.496 6.496 0 0 1 3.064-5.519 8.001 8.001 0 0 1 15.872 0 6.5 6.5 0 0 1-2.936 12L7 21c-3.356-.274-6-3.078-6-6.5zm15.848 4.487a4.5 4.5 0 0 0 2.03-8.309l-.807-.503-.12-.942a6.001 6.001 0 0 0-11.903 0l-.12.942-.805.503a4.5 4.5 0 0 0 2.029 8.309l.173.013h9.35l.173-.013zM13 12h3l-4 5-4-5h3V8h2v4z"
+                  fill="currentColor"></path>
+              </svg>
+              <span>Download</span>
             </button>
-            <p class="section-text">
+          </p>
 
-            </p>
+          <h3 class="section-heading">Augmented Reality SHopping application(Web based and Application Based)</h3>
+          <p class="section-text">
+            Currently working on it.
+          </p>
 
-            <h3 class="section-heading">Instagram</h3>
-            <button class="btn_btn-primary" onclick="instaGo()">
-              <span class="shadow"></span>
-              <span class="edge"></span>
-              <span class="front text">Lets Go</span>
+          <h3 class="section-heading">Augmented Reality with IOT device.</h3>
+          <p class="section-text">
+            It is a Augmented reality with IOT application mainly focused on Android. Control by a web based
+            application. When a 3D model will move and do its job with this our animation will trigger and do it in the
+            application to demonstrate how the machine will work in 3D.
+            Manly focus for the Students as they can use it in Online class or any remote places with interacting with
+            the machine they can use it using the inbuilt button and also when machine will work in physically its also
+            working with it.
+          </p>
+
+          <h3 class="section-heading">Sorting Visualizer</h3>
+          <p class="section-text">
+            A sorting Visualizer with 12 Different animation(Visualizer).
+            25 Different types of Sorting algorithm.
+
+            <!-- <button class="btn_1" onclick="">Lets Go</button> -->
+            <button class="btn_2" onclick="">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                  fill="currentColor"></path>
+              </svg>
+              <span>Launch</span>
             </button>
-            <p class="section-text">
-              
-            </p>
-            
-            <h3 class="section-heading">Contact Form</h3>
-            <div class="form-group">
-              <h5 for="name">Name</h5>
-              <input
-                  type="text"
-                  class="form-controll"
-                  id="name"
-                  autocomplete="off"
-              />
-            </div>
+          </p>
+        </div>
+        <div class="progress-wrapper progress-bar-wrapper-right">
+          <div class="progress-bar blue-background"></div>
+        </div>
+      </section>
 
-            <div class="form-group">
-              <h5 for="email">Email</h5>
-              <input
-                  type="email"
-                  class="form-controll"
-                  id="email"
-                  autocomplete="off"
-              />
-            </div>
 
-            <div class="form-group">
-              <h5 for="message">Message</h5>
-              <textarea class="form-control" id="message" rows="3"></textarea>
-            </div>
-            <button class="btn_btn-primary" onclick="sendMail()">
-              <span class="shadow"></span>
-              <span class="edge"></span>
-              <span class="front text">Submit</span>
-            </button>
-            <p class="section-text">
-              
-            </p>
+      <section class="second-section section left">
+        <div class="section-intro-wrapper blue-text blue-border">
+          <h1 class="section-title blue-text blue-border">
+            <span class="section-title-text blue-text">Work Experience</span>
+            <div class="section-title-decoration styleOne blue-border"></div>
+            <div class="section-title-decoration styleTwo blue-border"></div>
+            <div class="section-title-decoration styleThree blue-background blue-border"></div>
+          </h1>
+          <span class="section-number blue-text">03</span>
+        </div>
+        <div class="section-detail-wrapper">
+          <h3 class="section-heading">Free Lancing | LinkedIn, Fiver, Freelancer | April/2022 - December/2022 </h3>
+          <p>
+            Working as a freelancer in multiple domains initially after sometime switched to full time as an AR and VR
+            developer.
+          <p class="section-text">
+            Achievements/Tasks :
+          </p>
+          Worked around 2 - 3 freelancing project
+          like AR- Book for children, Story telling
+          </p>
+        </div>
+        <div class="section-detail-wrapper">
+          <h3 class="section-heading">Researcher & Developer Intern | HiDs Technologies | July/2022 - May/2023</h3>
+          <p>
+            IT Services and IT Consulting.
+          <p class="section-text">
+            Achievements/Tasks :
+          </p>
+          <ul>
+            <li>Worked on Virtual button and Digital twin provided by Vuforia SDK to create some exiting application for
+              the client.</li>
+            <li>Worked on some small games in VR for students.</li>
+            <li>Research on Augmented Reality with IOT with AWS for Future project.</li>
+            <li>Worked on multiple Augmented reality application for clients.</li>
+            <li>Industry servers while my internship - Education, Automation.</li>
+          </ul>
+          </p>
+        </div>
+        <div class="section-detail-wrapper">
+          <h3 class="section-heading">AR / VR Developer | HiDs Technologies | July/2023 - November/2023</h3>
+          <p>
+            IT Services and IT Consulting.
+          <p class="section-text">
+            Achievements/Tasks :
+          </p>
+          <ul>
+            <li>Worked on Augmented Reality based IOT Project called “MMS 4.0” an Industry 4.0 Project for a Client.
+            </li>
+            <li>Mange to create the VR application without IOT.</li>
+            <li>Integrate AWs lambda function with Unity.</li>
+            <li>In this project I showcase how Augmented Reality Worked with IOT and AWS.</li>
+            <li>Taking the Realtime data and showing to user in Augmented reality for that user can see and manage the
+              machine in Augmented reality only establishes one side connection for visualization.</li>
+            <li>Researched on Web AR based Platform for a Product (ThreeJs, ARJs, AFrame, BabylonJs).</li>
+            <li>Industry servers - Education, Automation, IT.</li>
+          </ul>
+          </p>
+        </div>
+        <div class="section-detail-wrapper">
+          <h3 class="section-heading">AR / VR Developer | CAD - MECH | Aug/2023 - Oct/2023</h3>
+          <p>
+            Automation and Electronics.
+          <p class="section-text">
+            Achievements/Tasks :
+          </p>
+          <ul>
+            <li>Build Augmented Reality application for their Product to showing case there working principle in AR.
+            </li>
+            <li>Build Different application for their Hydraulic and Pneumatic machinery Products.</li>
+            <li>Built application for University’s.</li>
+            <li>Industry servers - Automation, Education.</li>
+          </ul>
+          </p>
+        </div>
+        <div class="section-detail-wrapper">
+          <h3 class="section-heading">Project Lead (AR / VR Developer) | HiDs Technologies | jan/2024 - Present</h3>
+          <p>
+            IT Services and IT Consulting.
+          <p class="section-text">
+            Achievements/Tasks :
+          </p>
+          <ul>
+            <li>Working as a Project lead and developer.</li>
+            <li>Managing one Product called “WeldVerse”.</li>
+            <ul>
+              <li>Create UI design using Figma.</li>
+              <li>o Gathering data and managed the Team of 4 people.</li>
+            </ul>
+            <li>Developing one Virtual reality Product called “SemiconVerse”.</li>
+            <ul>
+              <li>o Developing the Project with one mentor and 3D modeler and managing it.</li>
+            </ul>
+            <li>Also create PPT presentation and Flayer for them for their marketing purpose.</li>
+            <li>Working on a AR application for one of our partner product.</li>
+            <li>Industry servers - Education, Semiconductor, IT, Welding.</li>
+          </ul>
+          </p>
+        </div>
+      </section>
+
+      <section class="second-section section right">
+        <div class="section-intro-wrapper blue-text blue-border">
+          <h1 class="section-title blue-text blue-border">
+            <span class="section-title-text blue-text">Interest</span>
+            <div class="section-title-decoration styleOne blue-border"></div>
+            <div class="section-title-decoration styleTwo blue-border"></div>
+            <div class="section-title-decoration styleThree blue-background blue-border"></div>
+          </h1>
+          <span class="section-number blue-text">04</span>
+        </div>
+      </section>
+
+      <div class="third-move section-margin"></div>
+
+      <section class="third-section section left">
+        <div class="progress-wrapper progress-bar-wrapper-left">
+          <div class="progress-bar green-background"></div>
+        </div>
+
+        <div class="section-intro-wrapper green-text green-border">
+          <h1 class="section-title green-text green-border">
+            <span class="section-title-text green-text">Contact Me</span>
+            <div class="section-title-decoration styleOne green-border"></div>
+            <div class="section-title-decoration styleTwo green-border"></div>
+            <div class="section-title-decoration styleThree green-background green-border"></div>
+          </h1>
+          <span class="section-number green-text">05</span>
+        </div>
+
+        <div class="section-detail-wrapper">
+          <h3 class="section-heading">LinkedIn</h3>
+          <button class="btn_btn-primary" onclick="linkedinGo()">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front text">Lets Go</span>
+          </button>
+          <p class="section-text">
+
+          </p>
+
+          <h3 class="section-heading">Instagram</h3>
+          <button class="btn_btn-primary" onclick="instaGo()">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front text">Lets Go</span>
+          </button>
+          <p class="section-text">
+
+          </p>
+
+          <h3 class="section-heading">Contact Form</h3>
+          <div class="form-group">
+            <h5 for="name">Name</h5>
+            <input type="text" class="form-controll" id="name" autocomplete="off" />
           </div>
-        </section>
 
-      </div>
+          <div class="form-group">
+            <h5 for="email">Email</h5>
+            <input type="email" class="form-controll" id="email" autocomplete="off" />
+          </div>
+
+          <div class="form-group">
+            <h5 for="message">Message</h5>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+          </div>
+          <button class="btn_btn-primary" onclick="sendMail()">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front text">Submit</span>
+          </button>
+          <p class="section-text">
+
+          </p>
+        </div>
+      </section>
+
     </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
